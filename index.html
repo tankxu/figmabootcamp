@@ -1,0 +1,597 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="https://figmascript.com/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Figma Bootcamp in ChiangMai</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div id="root">
+      <div class="min-h-screen bg-white">
+        <nav
+          class="fixed top-0 left-0 right-0 bg-white border-b border-gray-200 z-50"
+        >
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+              <div class="flex items-center">
+                <div
+                  class="text-2xl font-bold text-black"
+                  style="font-family: Pacifico, serif"
+                >
+                  Figma Bootcamp
+                </div>
+              </div>
+              <div class="hidden md:block">
+                <div class="ml-10 flex items-baseline space-x-8">
+                  <button class="text-gray-700 hover:text-black px-3 py-2 text-sm font-medium cursor-pointer whitespace-nowrap" onclick="scrollToSection('about')">About</button>
+                  <button class="text-gray-700 hover:text-black px-3 py-2 text-sm font-medium cursor-pointer whitespace-nowrap" onclick="scrollToSection('curriculum')">Curriculum</button>
+                  <button class="text-gray-700 hover:text-black px-3 py-2 text-sm font-medium cursor-pointer whitespace-nowrap" onclick="scrollToSection('details')">Details</button>
+                  <button class="bg-black text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-gray-800 cursor-pointer whitespace-nowrap" onclick="scrollToSection('apply')">Apply Now</button>
+                </div>
+              </div>
+              <div class="md:hidden">
+                <button
+                  class="text-gray-700 hover:text-black p-2 cursor-pointer"
+                >
+                  <i class="ri-menu-line text-xl"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <section class="pt-16 bg-white">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              <div>
+                <h1
+                  class="text-5xl lg:text-6xl font-bold text-black mb-6 leading-tight"
+                >
+                  Master Design with Figma in Chiang Mai
+                </h1>
+                <p class="text-xl text-gray-600 mb-8 leading-relaxed">
+                  Join our intensive 6-month bootcamp and transform your career
+                  with hands-on design training, expert mentorship, and
+                  real-world projects in the heart of Thailand.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                  <button class="bg-black text-white px-8 py-4 rounded-lg text-lg font-medium hover:bg-gray-800 cursor-pointer whitespace-nowrap" onclick="scrollToSection('apply')">Apply Now</button>
+                </div>
+              </div>
+              <div class="relative">
+                <img
+                  alt="Design Workspace"
+                  class="w-full h-auto rounded-2xl object-top"
+                  src="https://readdy.ai/api/search-image?query=Modern%20UI%20UX%20design%20workspace%20with%20multiple%20screens%20showing%20design%20interfaces%2C%20clean%20minimalist%20office%20environment%20in%20Chiang%20Mai%20Thailand%2C%20natural%20lighting%2C%20contemporary%20furniture%2C%20design%20tools%20and%20sketches%20on%20desk%2C%20professional%20creative%20atmosphere%2C%20high-tech%20setup%20with%20tablets%20and%20computers%20displaying%20colorful%20user%20interface%20designs&amp;width=600&amp;height=500&amp;seq=hero-image&amp;orientation=landscape"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="about" class="py-20 bg-gray-50">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+              <h2 class="text-4xl font-bold text-black mb-6">
+                Why Choose Our Bootcamp?
+              </h2>
+              <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                Experience immersive learning in one of Southeast Asia's most
+                vibrant creative hubs, with expert instructors and a curriculum
+                designed for real-world success.
+              </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div class="bg-white p-8 rounded-2xl">
+                <div
+                  class="w-12 h-12 bg-black rounded-lg flex items-center justify-center mb-6"
+                >
+                  <i class="ri-map-pin-line text-white text-xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-black mb-4">
+                  Prime Location
+                </h3>
+                <p class="text-gray-600">
+                  Learn in modern co-working spaces near Chiang Mai University,
+                  surrounded by Thailand's thriving digital nomad community and
+                  creative scene.
+                </p>
+              </div>
+              <div class="bg-white p-8 rounded-2xl">
+                <div
+                  class="w-12 h-12 bg-black rounded-lg flex items-center justify-center mb-6"
+                >
+                  <i class="ri-team-line text-white text-xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-black mb-4">
+                  Expert Mentorship
+                </h3>
+                <p class="text-gray-600">
+                  Get personalized guidance from industry professionals with
+                  years of experience at top design agencies and tech companies
+                  worldwide.
+                </p>
+              </div>
+              <div class="bg-white p-8 rounded-2xl">
+                <div
+                  class="w-12 h-12 bg-black rounded-lg flex items-center justify-center mb-6"
+                >
+                  <i class="ri-global-line text-white text-xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-black mb-4">
+                  Online Support
+                </h3>
+                <p class="text-gray-600">
+                  Access continuous online guidance and resources beyond
+                  classroom hours, ensuring you never feel stuck in your
+                  learning journey.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="py-20 bg-white">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+              <h2 class="text-4xl font-bold text-black mb-6">Perfect For</h2>
+              <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                Our bootcamp is designed for ambitious individuals ready to dive
+                deep into the world of design.
+              </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div class="text-center p-8">
+                <div
+                  class="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-6"
+                >
+                  <i class="ri-graduation-cap-line text-2xl text-black"></i>
+                </div>
+                <h3 class="text-xl font-bold text-black mb-4">
+                  University Students
+                </h3>
+                <p class="text-gray-600">
+                  Students interested in graphic design and UI/UX who want to
+                  gain practical, industry-relevant skills alongside their
+                  academic studies.
+                </p>
+              </div>
+              <div class="text-center p-8">
+                <div
+                  class="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-6"
+                >
+                  <i class="ri-briefcase-line text-2xl text-black"></i>
+                </div>
+                <h3 class="text-xl font-bold text-black mb-4">
+                  Career Changers
+                </h3>
+                <p class="text-gray-600">
+                  Professionals with work experience looking to transition into
+                  the exciting and growing field of UI/UX design.
+                </p>
+              </div>
+              <div class="text-center p-8">
+                <div
+                  class="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-6"
+                >
+                  <i class="ri-code-line text-2xl text-black"></i>
+                </div>
+                <h3 class="text-xl font-bold text-black mb-4">Developers</h3>
+                <p class="text-gray-600">
+                  Programmers who want to expand their skillset by learning
+                  design principles and user experience methodologies.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="curriculum" class="py-20 bg-gray-50">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+              <h2 class="text-4xl font-bold text-black mb-6">
+                Comprehensive Curriculum
+              </h2>
+              <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                Master every aspect of UI/UX design through our carefully
+                crafted 6-month program.
+              </p>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+              <div>
+                <div class="space-y-8">
+                  <div class="flex items-start space-x-4">
+                    <div
+                      class="w-8 h-8 bg-black rounded-full flex items-center justify-center flex-shrink-0 mt-1"
+                    >
+                      <span class="text-white text-sm font-bold">1</span>
+                    </div>
+                    <div>
+                      <h3 class="text-xl font-bold text-black mb-2">
+                        Design Fundamentals
+                      </h3>
+                      <p class="text-gray-600">
+                        Typography, color theory, layout principles, and visual
+                        hierarchy
+                      </p>
+                    </div>
+                  </div>
+                  <div class="flex items-start space-x-4">
+                    <div
+                      class="w-8 h-8 bg-black rounded-full flex items-center justify-center flex-shrink-0 mt-1"
+                    >
+                      <span class="text-white text-sm font-bold">2</span>
+                    </div>
+                    <div>
+                      <h3 class="text-xl font-bold text-black mb-2">
+                        User Research &amp; Analysis
+                      </h3>
+                      <p class="text-gray-600">
+                        User personas, journey mapping, usability testing, and
+                        data analysis
+                      </p>
+                    </div>
+                  </div>
+                  <div class="flex items-start space-x-4">
+                    <div
+                      class="w-8 h-8 bg-black rounded-full flex items-center justify-center flex-shrink-0 mt-1"
+                    >
+                      <span class="text-white text-sm font-bold">3</span>
+                    </div>
+                    <div>
+                      <h3 class="text-xl font-bold text-black mb-2">
+                        Wireframing &amp; Prototyping
+                      </h3>
+                      <p class="text-gray-600">
+                        Low and high-fidelity wireframes, interactive prototypes
+                        in Figma
+                      </p>
+                    </div>
+                  </div>
+                  <div class="flex items-start space-x-4">
+                    <div
+                      class="w-8 h-8 bg-black rounded-full flex items-center justify-center flex-shrink-0 mt-1"
+                    >
+                      <span class="text-white text-sm font-bold">4</span>
+                    </div>
+                    <div>
+                      <h3 class="text-xl font-bold text-black mb-2">
+                        Interface Design
+                      </h3>
+                      <p class="text-gray-600">
+                        Mobile and web UI design, design systems, and component
+                        libraries
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="space-y-8">
+                  <div class="flex items-start space-x-4">
+                    <div
+                      class="w-8 h-8 bg-black rounded-full flex items-center justify-center flex-shrink-0 mt-1"
+                    >
+                      <span class="text-white text-sm font-bold">5</span>
+                    </div>
+                    <div>
+                      <h3 class="text-xl font-bold text-black mb-2">
+                        Interaction Design
+                      </h3>
+                      <p class="text-gray-600">
+                        Micro-interactions, animations, and advanced prototyping
+                        techniques
+                      </p>
+                    </div>
+                  </div>
+                  <div class="flex items-start space-x-4">
+                    <div
+                      class="w-8 h-8 bg-black rounded-full flex items-center justify-center flex-shrink-0 mt-1"
+                    >
+                      <span class="text-white text-sm font-bold">6</span>
+                    </div>
+                    <div>
+                      <h3 class="text-xl font-bold text-black mb-2">
+                        Figma Plugin Development
+                      </h3>
+                      <p class="text-gray-600">
+                        Introduction to Figma plugin development and extending
+                        design workflows
+                      </p>
+                    </div>
+                  </div>
+                  <div class="flex items-start space-x-4">
+                    <div
+                      class="w-8 h-8 bg-black rounded-full flex items-center justify-center flex-shrink-0 mt-1"
+                    >
+                      <span class="text-white text-sm font-bold">7</span>
+                    </div>
+                    <div>
+                      <h3 class="text-xl font-bold text-black mb-2">
+                        Industry Tools
+                      </h3>
+                      <p class="text-gray-600">
+                        Figma mastery, video collaboration tools, developer
+                        handoffs, and 3D design integration
+                      </p>
+                    </div>
+                  </div>
+                  <div class="flex items-start space-x-4">
+                    <div
+                      class="w-8 h-8 bg-black rounded-full flex items-center justify-center flex-shrink-0 mt-1"
+                    >
+                      <span class="text-white text-sm font-bold">8</span>
+                    </div>
+                    <div>
+                      <h3 class="text-xl font-bold text-black mb-2">
+                        Career Preparation
+                      </h3>
+                      <p class="text-gray-600">
+                        Interview preparation, freelancing basics, and industry
+                        networking
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="details" class="py-20 bg-white">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+              <h2 class="text-4xl font-bold text-black mb-6">
+                Bootcamp Details
+              </h2>
+              <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                Everything you need to know about our intensive design program.
+              </p>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+              <div class="space-y-8">
+                <div class="bg-gray-50 p-8 rounded-2xl">
+                  <div class="flex items-center mb-4">
+                    <div
+                      class="w-10 h-10 bg-black rounded-lg flex items-center justify-center mr-4"
+                    >
+                      <i class="ri-calendar-line text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-black">Schedule</h3>
+                  </div>
+                  <div class="space-y-2 text-gray-600">
+                    <p><strong>Start Date:</strong> October 2025</p>
+                    <p><strong>Duration:</strong> 6 months</p>
+                    <p>
+                      <strong>Classes:</strong> Wednesday &amp; Sunday evenings
+                    </p>
+                    <p><strong>Time:</strong> 7:00 PM - 9:30 PM</p>
+                  </div>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-2xl">
+                  <div class="flex items-center mb-4">
+                    <div
+                      class="w-10 h-10 bg-black rounded-lg flex items-center justify-center mr-4"
+                    >
+                      <i class="ri-group-line text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-black">Class Size</h3>
+                  </div>
+                  <p class="text-gray-600">
+                    Limited to 20 students for personalized attention and
+                    meaningful peer interaction.
+                  </p>
+                </div>
+              </div>
+              <div class="space-y-8">
+                <div class="bg-gray-50 p-8 rounded-2xl">
+                  <div class="flex items-center mb-4">
+                    <div
+                      class="w-10 h-10 bg-black rounded-lg flex items-center justify-center mr-4"
+                    >
+                      <i class="ri-map-pin-2-line text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-black">Location</h3>
+                  </div>
+                  <p class="text-gray-600">
+                    Modern co-working spaces near Chiang Mai University. Exact
+                    location will be announced before each session.
+                  </p>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-2xl">
+                  <div class="flex items-center mb-4">
+                    <div
+                      class="w-10 h-10 bg-black rounded-lg flex items-center justify-center mr-4"
+                    >
+                      <i class="ri-price-tag-3-line text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-black">Pricing</h3>
+                  </div>
+                  <div class="text-gray-600">
+                    <p class="text-3xl font-bold text-black mb-2">38,000 THB</p>
+                    <p>
+                      Complete 6-month program including materials and online
+                      support
+                    </p>
+                    <p class="text-sm mt-2 text-gray-500">
+                      Full refund available if not satisfied within the first
+                      week
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="apply" class="py-20 bg-gray-50">
+          <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+              <h2 class="text-4xl font-bold text-black mb-6">
+                Ready to Start Your Design Journey?
+              </h2>
+              <p class="text-xl text-gray-600">
+                Apply now for our October 2025 cohort. Limited spots available.
+              </p>
+            </div>
+            <div class="bg-white rounded-2xl p-8 lg:p-12">
+              <form
+                id="bootcamp_registration"
+                action="https://formspree.io/f/mwpngebr"
+                method="POST"
+                class="space-y-6"
+              >
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div>
+                    <label
+                      for="name"
+                      class="block text-sm font-medium text-gray-700 mb-2"
+                      >Full Name *</label
+                    ><input
+                      id="name"
+                      required=""
+                      class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent text-sm"
+                      placeholder="Enter your full name"
+                      type="text"
+                      value=""
+                      name="name"
+                    />
+                  </div>
+                  <div>
+                    <label
+                      for="email"
+                      class="block text-sm font-medium text-gray-700 mb-2"
+                      >Email Address *</label
+                    ><input
+                      id="email"
+                      required=""
+                      class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent text-sm"
+                      placeholder="Enter your email"
+                      type="email"
+                      value=""
+                      name="email"
+                    />
+                  </div>
+                </div>
+                <div>
+                  <label
+                    for="phone"
+                    class="block text-sm font-medium text-gray-700 mb-2"
+                    >Phone Number *</label
+                  ><input
+                    id="phone"
+                    required=""
+                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent text-sm"
+                    placeholder="Enter your phone number"
+                    type="tel"
+                    value=""
+                    name="phone"
+                  />
+                </div>
+                <div>
+                  <label
+                    for="motivation"
+                    class="block text-sm font-medium text-gray-700 mb-2"
+                    >Why do you want to join this bootcamp? *</label
+                  ><textarea
+                    id="motivation"
+                    name="motivation"
+                    required=""
+                    maxlength="500"
+                    rows="4"
+                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent text-sm resize-none"
+                    placeholder="Tell us about your motivation and goals (max 500 characters)"
+                  ></textarea>
+                  <div class="text-right text-sm text-gray-500 mt-1">0/500</div>
+                </div>
+                <button
+                  type="submit"
+                  class="w-full bg-black text-white py-4 px-8 rounded-lg text-lg font-medium hover:bg-gray-800 disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer whitespace-nowrap"
+                >
+                  Submit Application
+                </button>
+              </form>
+            </div>
+          </div>
+        </section>
+        <footer class="bg-black text-white py-12">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div>
+                <div
+                  class="text-2xl font-bold mb-4"
+                  style="font-family: Pacifico, serif"
+                >
+                  Figma Bootcamp
+                </div>
+                <p class="text-gray-400">
+                  Transform your career with intensive UI/UX design training in
+                  the heart of Chiang Mai, Thailand.
+                </p>
+              </div>
+              <div>
+                <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                <div class="space-y-2">
+                  <button
+                    class="block text-gray-400 hover:text-white cursor-pointer"
+                  >
+                    About</button
+                  ><button
+                    class="block text-gray-400 hover:text-white cursor-pointer"
+                  >
+                    Curriculum</button
+                  ><button
+                    class="block text-gray-400 hover:text-white cursor-pointer"
+                  >
+                    Details</button
+                  ><button
+                    class="block text-gray-400 hover:text-white cursor-pointer"
+                  >
+                    Apply
+                  </button>
+                </div>
+              </div>
+              <div>
+                <h3 class="text-lg font-semibold mb-4">Contact</h3>
+                <div class="space-y-2 text-gray-400">
+                  <p class="flex items-center">
+                    <i class="ri-map-pin-line mr-2"></i>Chiang Mai, Thailand
+                  </p>
+                  <p class="flex items-center">
+                    <i class="ri-mail-line mr-2"></i>info@figmabootcamp.site
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center"
+            >
+              <p class="text-gray-400 text-sm">
+                © 2025 Figma Bootcamp. All rights reserved.
+              </p>
+            </div>
+          </div>
+        </footer>
+    <script>
+      function scrollToSection(id) {
+        var el = document.getElementById(id);
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+    </script>
+      </div>
+    </div>
+  </body>
+</html>
